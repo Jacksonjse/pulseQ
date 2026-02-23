@@ -1,0 +1,7 @@
+name: CPU Saturation Fix
+root_cause: cpu_saturation
+actions:
+  - type: kubectl_scale
+    namespace: default
+    service: "{{ service }}"
+    replicas: 3

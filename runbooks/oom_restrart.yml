@@ -1,0 +1,7 @@
+name: OOM Restart
+root_cause: oom_killed
+actions:
+  - type: kubectl_restart
+    deployment: "{{ service }}-deployment"
+  - type: kubectl_scale
+    replicas: 2

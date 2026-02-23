@@ -1,0 +1,6 @@
+name: Error Rate Rollback
+root_cause: error_rate_spike
+actions:
+  - type: github_actions
+    workflow: rollback.yml
+    repo: "{{ service }}"
